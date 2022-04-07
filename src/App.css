@@ -1,8 +1,6 @@
-.movie-app > .row {
-	overflow-x: auto;
-	flex-wrap: nowrap;
-}
+
 body {
 	background: #181c50;
 	color: #ffffff;
 }
+
