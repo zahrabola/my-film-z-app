@@ -28,6 +28,17 @@ const getMovieRequest = async (searchValue) => {
   }, [searchValue]);
 
 
+  	useEffect(() => {
+      const movieFavourites = JSON.parse(
+        localStorage.getItem("react-movie-app-favourites")
+      );
+
+      if (movieFavourites) {
+        setFavourites(movieFavourites);
+      }
+    }, []);
+
+
 const saveToLocalStorage = (items) => {
   localStorage.setItem("react-movie-app-favourites", JSON.stringify(items));
 };
@@ -50,7 +61,7 @@ const saveToLocalStorage = (items) => {
 
  return (
    <div className="container-fluid container movie-app">
-     <h1>Hello</h1>
+     <h5>Zahra Olanrewaju </h5>
      <div className="row">
        <MovieListHeading heading="Movies" />
        <SearchBox searchValue={searchValue} setSearchValue={setSearchValue} />
