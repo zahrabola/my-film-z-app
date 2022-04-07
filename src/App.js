@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import "bootstrap/dist/css/bootstrap.min.css";
-import './App.css';
+import "./App.css";
 import MovieList from './components/MovieList';
 import MovieListHeading from './components/MovieListHeading';
 import SearchBox from './components/SearchBox';
@@ -25,17 +25,16 @@ const getMovieRequest = async (searchValue) => {
   }, [searchValue]);
 
  return (
-   <div className="container-fluid justify-content-start movie-app">
+   <div className="container-fluid movie-app">
      <h1>Hello</h1>
      <div className="row">
        <MovieListHeading heading="Movies" />
        <SearchBox searchValue={searchValue} setSearchValue={setSearchValue} />
      </div>
-     <div class="container">
-     <div className="row">
-       <MovieList movies={movies} />
-     </div>
-     </div>
+       <div className="row">
+         <MovieList movies={movies} />
+       </div>
+
    </div>
  );
  
