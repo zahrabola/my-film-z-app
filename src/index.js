@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"></meta>
 
 ReactDOM.render(
   <React.StrictMode>
